@@ -1,0 +1,257 @@
+
+<!-- =========================================================
+STEP 1: Add the required HTML5 skeleton
+========================================================= -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Factorio Guide</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- =========================================================
+    STEP 2: Build the “top area” (site name + navigation) using simple HTML
+    ========================================================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand">Factorio<span class="dot">.</span> Guide</a>
+      <nav class="site-nav">
+        <a href="#features">Features</a>
+        <a href="#about">About Factorio</a>
+        <a href="#friends">Play with Friends</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =========================================================
+    STEP 3: Hero section + “Get Started button” as a link
+    ========================================================= -->
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>The Factory Must Grow!</h1>
+        <p class="hero-subhead">Expand your factory and defend it from the pesky biters.</p>
+        <a href="#about" class="btn btn-dark">Get Started</a>
+      </div>
+    </section>
+
+    <!-- =========================================================
+    STEP 4: Features section (3 blocks) + featured content section
+    ========================================================= -->
+    <section id="features" class="features">
+      <div class="container">
+        <h2 class="section-title">Why Play Factorio?</h2>
+
+        <p class="section-lede">
+          Discover what makes Factorio an exciting game about automation,
+          research, and survival.
+        </p>
+
+        <div class="features-grid">
+          <article class="feature">
+            <h3>Automate Everything</h3>
+
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                fill="currentColor" width="30" height="30" class="size-6">
+                <path
+                  d="M18.375 2.25c-1.035 0-1.875.84-1.875 1.875v15.75c0 1.035.84 1.875 1.875 1.875h.75c1.035 0 1.875-.84 1.875-1.875V4.125c0-1.036-.84-1.875-1.875-1.875h-.75ZM9.75 8.625c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-.75a1.875 1.875 0 0 1-1.875-1.875V8.625ZM3 13.125c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v6.75c0 1.035-.84 1.875-1.875 1.875h-.75A1.875 1.875 0 0 1 3 19.875v-6.75Z" />
+              </svg>
+            </div>
+
+            <p>
+              You’ll need a bunch of resources to get off the planet, so make
+              sure you automate everything.
+            </p>
+          </article>
+
+          <article class="feature">
+            <h3>Science Is Everything</h3>
+
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                fill="currentColor" width="30" height="30" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.5 3.798v5.02a3 3 0 0 1-.879 2.121l-2.377 2.377a9.845 9.845 0 0 1 5.091 1.013 8.315 8.315 0 0 0 5.713.636l.285-.071-3.954-3.955a3 3 0 0 1-.879-2.121v-5.02a23.614 23.614 0 0 0-3 0Zm4.5.138a.75.75 0 0 0 .093-1.495A24.837 24.837 0 0 0 12 2.25a25.048 25.048 0 0 0-3.093.191A.75.75 0 0 0 9 3.936v4.882a1.5 1.5 0 0 1-.44 1.06l-6.293 6.294c-1.62 1.621-.903 4.475 1.471 4.88 2.686.46 5.447.698 8.262.698 2.816 0 5.576-.239 8.262-.697 2.373-.406 3.092-3.26 1.47-4.881L15.44 9.879A1.5 1.5 0 0 1 15 8.818V3.936Z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+
+            <p>
+              Automate different sciences to upgrade your technology.
+              Different sciences take harder ingredients.
+            </p>
+          </article>
+
+          <article class="feature">
+            <h3>Defend Yourself from Biters</h3>
+
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                fill="currentColor" width="30" height="30" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M8.478 1.6a.75.75 0 0 1 .273 1.026 3.72 3.72 0 0 0-.425 1.121c.058.058.118.114.18.168A4.491 4.491 0 0 1 12 2.25c1.413 0 2.673.651 3.497 1.668.06-.054.12-.11.178-.167a3.717 3.717 0 0 0-.426-1.125.75.75 0 1 1 1.298-.752 5.22 5.22 0 0 1 .671 2.046.75.75 0 0 1-.187.582c-.241.27-.505.52-.787.749a4.494 4.494 0 0 1 .216 2.1c-.106.792-.753 1.295-1.417 1.403-.182.03-.364.057-.547.081.152.227.273.476.359.742a23.122 23.122 0 0 0 3.832-.803 23.241 23.241 0 0 0-.345-2.634.75.75 0 0 1 1.474-.28c.21 1.115.348 2.256.404 3.418a.75.75 0 0 1-.516.75c-1.527.499-3.119.854-4.76 1.049-.074.38-.22.735-.423 1.05 2.066.209 4.058.672 5.943 1.358a.75.75 0 0 1 .492.75 24.665 24.665 0 0 1-1.189 6.25.75.75 0 0 1-1.425-.47 23.14 23.14 0 0 0 1.077-5.306c-.5-.169-1.009-.32-1.524-.455.068.234.104.484.104.746 0 3.956-2.521 7.5-6 7.5-3.478 0-6-3.544-6-7.5 0-.262.037-.511.104-.746-.514.135-1.022.286-1.522.455.154 1.838.52 3.616 1.077 5.307a.75.75 0 1 1-1.425.468 24.662 24.662 0 0 1-1.19-6.25.75.75 0 0 1 .493-.749 24.586 24.586 0 0 1 4.964-1.24h.01c.321-.046.644-.085.969-.118a2.983 2.983 0 0 1-.424-1.05 24.614 24.614 0 0 1-4.76-1.05.75.75 0 0 1-.516-.75c.057-1.16.194-2.302.405-3.417a.75.75 0 0 1 1.474.28c-.164.862-.28 1.74-.345 2.634 1.237.371 2.517.642 3.832.803.085-.266.207-.515.359-.742a18.698 18.698 0 0 1-.547-.08c-.664-.11-1.311-.612-1.417-1.404a4.535 4.535 0 0 1 .217-2.103 6.788 6.788 0 0 1-.788-.751.75.75 0 0 1-.187-.583 5.22 5.22 0 0 1 .67-2.04.75.75 0 0 1 1.026-.273Z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+
+            <p>
+              Defend your walls with gun turrets. Enemies get stronger the
+              more industry you create, so upgrade your weapons to keep up.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="featured">
+      <div class="container">
+        <h2 class="section-title">About Factorio</h2>
+
+        <p class="section-lede">
+          Learn about the challenge of building a factory and finding a way
+          off an alien planet.
+        </p>
+
+        <div class="media">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/J8SBp4SyvLc"
+            title="Factorio trailer"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <p>
+          Factorio is an addictive game. You crash land on a deserted planet
+          full of biters. You have to find a way to get off the planet without
+          dying to the hostile natives.
+        </p>
+
+        <p>
+          The best way to get off the planet is to automate everything from
+          the production of raw resources to transportation and finally to
+          the refinement and crafting of these resources.
+        </p>
+
+        <p>
+          Be careful, the more you expand, the angrier the biters get, so
+          make sure your weapons production is up to snuff.
+        </p>
+
+        <p>
+          There is always something to do in Factorio, a factory to create,
+          or to improve.
+        </p>
+
+        <h3>Things you can do in Factorio</h3>
+        <ul>
+          <li>Automate every resource</li>
+          <li>Make sprawling factories</li>
+          <li>Automate your defences</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =========================================================
+  STEP 5: Secondary content + CTA
+  ========================================================= -->
+
+    <section id="friends" class="secondary">
+      <div class="container">
+        <h2 class="section-title">More Ways to Play</h2>
+
+        <p class="section-lede">
+          Team up with friends or work toward launching a rocket
+          from your factory.
+        </p>
+
+        <div class="secondary-grid">
+          <article class="card">
+            <div class="card-text">
+              <h3>Play with Friends</h3>
+              <p>
+                Invite friends to help you expand your factory and fight
+                back against the biters.
+              </p>
+              <a href="#cta" class="btn btn-outline">Get Started</a>
+            </div>
+            <div class="card-image img-a"
+              role="img"
+              aria-label="Landscape representing exploration">
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-text">
+              <h3>Research a Way to Get Off the Planet</h3>
+              <p>
+                Gather materials to craft science to research a way to
+                get off this planet.
+              </p>
+              <a href="#about" class="btn btn-outline">Learn More</a>
+            </div>
+            <div class="card-image img-b"
+              role="img"
+              aria-label="Image representing technology and space">
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta" class="cta">
+      <div class="container cta-inner">
+        <h2 class="section-title">Ready to Create Your Factory?</h2>
+        <p class="section-lede">
+          Start building, automate your production, and see how far
+          your factory can grow.
+        </p>
+        <a href="#features" class="btn btn-dark">Get Started</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+STEP 6: Footer
+========================================================= -->
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p>&copy; 2026 Factorio Guide</p>
+        <p>
+          Learn more about Factorio through these official resources.
+        </p>
+      </div>
+
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="#features">Features</a>
+          <a href="#about">About Factorio</a>
+          <a href="#friends">Play with Friends</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <a href="https://store.steampowered.com/app/427520/Factorio/"
+            target="_blank" rel="noopener noreferrer">Steam Page</a>
+          <a href="https://www.factorio.com/"
+            target="_blank" rel="noopener noreferrer">Factorio.com</a>
+          <a href="https://forums.factorio.com/"
+            target="_blank" rel="noopener noreferrer">Factorio Forums</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

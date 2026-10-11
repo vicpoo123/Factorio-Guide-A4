@@ -1,0 +1,363 @@
+
+/* a4stylesheet.css
+   A4: Intro CSS Fill-in Template
+   Instructions: rename this file to styles.css and complete each TODO block.
+*/
+
+/* ===== Base styles (mostly done) ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #59544F;
+  background: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: min(1000px, 92%);
+  margin: 0 auto;
+}
+
+/* ===== Header ===== */
+.site-header {
+  border-bottom: 1px solid #997D62;
+  background: #fff;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.brand .dot {
+  color: #D99454;
+}
+
+.site-nav a {
+  margin-left: 18px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: #59544F;
+}
+
+.site-nav a:hover {
+  color: #D99454;
+}
+
+/* ===== Hero ===== */
+.hero {
+  background:
+    linear-gradient(rgba(255, 255, 255, .55), rgba(255, 255, 255, .55)),
+    url("images/Factorio_background.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 360px;
+}
+
+.hero-content {
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 46px;
+  text-transform: uppercase;
+  color: #482b0e;
+}
+
+.hero-subhead {
+  margin: 6px 0 22px;
+  font-size: 22px;
+  color: #482b0e;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 3px;
+  font-size: 14px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-dark {
+  background: #D99454;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background: #59544F;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-outline {
+  border: 2px solid #5F7CB4;
+  color: #5F7CB4;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: #55BED9;
+  color: #59544F;
+  text-decoration: none;
+}
+
+/* ===== Features (3 columns) ===== */
+.features {
+  padding: 42px 0;
+}
+
+.features-grid {
+  display: flex;
+  gap: 26px;
+}
+
+.feature {
+  flex: 1;
+  text-align: center;
+}
+
+.feature h3 {
+  color: #59544F;
+}
+
+.icon {
+  width: 56px;
+  height: 56px;
+  border: 2px solid #997D62;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 12px;
+  color: #D99454;
+  font-size: 22px;
+}
+
+.icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+/* ===== Featured content ===== */
+.featured {
+  padding: 42px 0 36px;
+  background: #F5F2EF;
+}
+
+.section-title {
+  text-align: center;
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #59544F;
+}
+
+.section-lede {
+  text-align: center;
+  max-width: 680px;
+  margin: 10px auto 22px;
+  color: #59544F;
+  font-size: 13px;
+}
+
+.media {
+  background: #F5F2EF;
+  border: 1px solid #997D62;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.media iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: none;
+}
+
+.featured p,
+.featured li {
+  color: #59544F;
+}
+
+.featured h3 {
+  color: #997D62;
+}
+
+/* ===== Secondary content (2 cards) ===== */
+.secondary {
+  padding: 34px 0 44px;
+}
+
+.secondary-grid {
+  display: flex;
+  gap: 26px;
+}
+
+.card {
+  flex: 1;
+  border: 1px solid #997D62;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  background: #fff;
+}
+
+.card-text {
+  padding: 18px;
+}
+
+.card-text h3 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #59544F;
+}
+
+.card-text p {
+  margin: 0 0 14px;
+  color: #59544F;
+  font-size: 13px;
+}
+
+.card-image {
+  min-height: 160px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Optional images (already provided) */
+.img-a {
+  background-image: url("images/factorio_rocket.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.img-b {
+  background-image: url("images/factorio_factory.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* ===== CTA ===== */
+.cta {
+  background: #F5F2EF;
+  padding: 42px 0;
+}
+
+.cta-inner {
+  text-align: center;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  background: #F5F2EF;
+  border-top: 1px solid #997D62;
+  padding: 24px 0;
+}
+
+.footer-inner {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-left {
+  max-width: 360px;
+  color: #59544F;
+  font-size: 12px;
+}
+
+.footer-left a {
+  color: #5F7CB4;
+}
+
+.footer-cols {
+  display: flex;
+  gap: 28px;
+}
+
+.footer-col h4 {
+  margin: 0 0 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #997D62;
+}
+
+.footer-col a {
+  display: block;
+  font-size: 12px;
+  color: #59544F;
+  margin: 6px 0;
+}
+
+.footer-col a:hover,
+.footer-left a:hover {
+  color: #D99454;
+}
+
+/* ===== Responsive layout ===== */
+@media (max-width: 700px) {
+  .header-inner,
+  .footer-inner {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .site-nav a {
+    margin-left: 0;
+    margin-right: 12px;
+  }
+
+  .features-grid,
+  .secondary-grid {
+    flex-direction: column;
+  }
+
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .card-image {
+    min-height: 200px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero-subhead {
+    font-size: 18px;
+  }
+
+  .footer-cols {
+    flex-wrap: wrap;
+  }
+}
